@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css?_v=20220205124645" />
+	<link rel="stylesheet" href="Styles/style.min.css?_v=20220205124645">
+	<title>Каталог || Monaco</title>
+</head>
+
+<body>
+	<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="header__column">
+				<div class="header__src">
+					<input tabindex="1" type="text" name="" id="" class="header__input">
+				</div>
+				<div data-da=".header, 768, 1" class="header__contact"><a tabindex="2" href="tel:+996700555222">+996 (700)
+						555222</a></div>
+			</div>
+			<div class="header__logo">
+				<a tabindex="3" href="./index.html"><img src="./Img/Logos-icons/logo-1.png" alt=""/></a>
+			</div>
+			<div class="header__column">
+				<div tabindex="4" class="header__callback">Заказать звонок</div>
+				<a tabindex="5" href="#" class="header__basket"><span>0</span> товаров</a>
+			</div>
+		</div>
+	</div>
+</header>
+<nav class="nav">
+	<ul class="nav__list">
+		<li tabindex="6" class="nav__list-title">Меню</li>
+		<li class="nav__list-item"><a tabindex="7" href="./catalog.html#jacket">Куртки</a></li>
+		<li class="nav__list-item"><a tabindex="8" href="./catalog.html#windbraker">Ветровки</a></li>
+		<li class="nav__list-item"><a tabindex="9" href="./catalog.html#jeans">Джинсы</a></li>
+		<li class="nav__list-item"><a tabindex="10" href="./catalog.html#two-piece">Двойки</a></li>
+		<li class="nav__list-item"><a tabindex="11" href="./catalog.html#hoodie">Худи</a></li>
+		<li class="nav__list-item"><a tabindex="12" href="./catalog.html#shoes">Обувь</a></li>
+		<li class="nav__list-item"><a tabindex="13" href="./catalog.html#dresses">Платья</a></li>
+	</ul>
+</nav>
+
+	<main>
+		<div class="container">
+			<ul class="breadcrumbs">
+	<li class="crumb"><a href="index.html"><img src="./Img/Logos-icons/Home.svg" alt="Home" class="crumb__img"></a></li>
+	<li class="crumb">Каталог</li>
+	<li class="crumb"></li>
+	<li class="crumb"></li>
+	<li class="crumb"></li>
+</ul>
+			<div class="catalog__wrapper">
+				<section class="catalog__customization">
+					<div class="catalog__filters filters">
+						<h3 class="catalog__caption">Фильтр товаров</h3>
+						<ul class="catalog__list">
+							<li tabindex="14" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Цена</p>
+								<span class="filters__price-value filters__price-value_min"></span>
+								<span class="filters__price-value filters__price-value_max"></span>
+								<div class="filters__price">
+									<div class="filters__slider slider">
+										<div class="slider__fill"></div>
+									</div>
+									<div class="filters__input-range">
+										<input class="range-min" type="range" min="100" max="4000" step="1" value="100"
+											name="price">
+										<input class="range-max" type="range" min="100" max="4000" step="1" value="4000"
+											name="price">
+									</div>
+								</div>
+							</li>
+							<li tabindex="15" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Производитель</p>
+							</li>
+							<li tabindex="16" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Набор</p>
+							</li>
+							<li tabindex="17" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Возраст</p>
+							</li>
+							<li tabindex="18" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Пол</p>
+								<div class="filters__sex">
+									<input class="filters__checkbox" type="checkbox" name="sex" id="female" value="female">
+									<label class="filters__label" for="male">для девочек</label>
+								</div>
+								<div class="filters__sex">
+									<input class="filters__checkbox" type="checkbox" name="sex" id="male" value="male">
+									<label class="filters__label" for="male">для мальчиков</label>
+								</div>
+								<div class="filters__sex">
+									<input class="filters__checkbox" type="checkbox" name="sex" id="universal" value="universal">
+									<label class="filters__label" for="universal">универсальные</label>
+								</div>
+							</li>
+							<li tabindex="19" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Материал</p>
+							</li>
+							<li tabindex="20" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Размер</p>
+							</li>
+							<li tabindex="21" class="catalog__list-item filters__list-item">
+								<p class="filters__name">Особенности</p>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog__categories">
+						<h3 class="catalog__caption">Категории</h3>
+						<ul class="catalog__list">
+							<li><a class="catalog__list-item category category--active-tab" href="#jacket">Куртки</a></li>
+							<li><a class="catalog__list-item category" href="#windbraker">Ветровки</a>
+							</li>
+							<li><a class="catalog__list-item category" href="#jeans">Джинсы</a></li>
+							<li><a class="catalog__list-item category" href="#two-piece">Двойки</a></li>
+							<li><a class="catalog__list-item category" href="#hoodie">Худи</a></li>
+							<li><a class="catalog__list-item category" href="#shoes">Обувь</a></li>
+							<li><a class="catalog__list-item category" href="#dresses">Платья</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="catalog__category">
+					<div id="jacket" class="catalog__swiper">
+						<div class="catalog__title">куртки</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper">
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="windbraker" class="catalog__swiper">
+						<div class="catalog__title">ветровки</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper">
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/mirror-girl.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/pink-smth.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-back.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(6).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/Rectangle-11-(12).png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">490 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+							<div class="catalog__item item">
+								<img data-src="./Img/Images/red-boy-front.png" src="./Img/1x1.png" alt="изображение" class="item__img swiper-lazy"/>
+								<p class="item__text">Куртка демисезонная Midimod Gold</p>
+								<p class="item__status">в наличии</p>
+								<div class="item__row">
+									<p class="item__cost">815 сом</p>
+									<button class="item__button button button_catalog-mini">выбрать</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="jeans" class="catalog__swiper">
+						<div class="catalog__title">джинсы</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="two-piece" class="catalog__swiper">
+						<div class="catalog__title">двойки</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="hoodie" class="catalog__swiper">
+						<div class="catalog__title">худи</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="shoes" class="catalog__swiper">
+						<div class="catalog__title">обувь</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+					<div id="dresses" class="catalog__swiper">
+						<div class="catalog__title">платья</div>
+						<div class="swiper-wrapper catalog__swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-prev catalog__swiper-button catalog__swiper-button-prev">
+						</div>
+						<div class="swiper-pagination catalog__swiper-pagination"></div>
+						<div class="swiper-button swiper-button-next catalog__swiper-button catalog__swiper-button-next">
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__content">
+			<div class="footer__social">
+				<p class="footer__promo">MONACO в соц.сетях</p>
+				<a href="#"><img src="./Img/Logos-icons/Instagram_black.svg" alt="" class="footer__link"/></a>
+				<a href="#"><img src="./Img/Logos-icons/Telegram_black.svg" alt="" class="footer__link"/></a>
+			</div>
+			<div class="footer__row">
+				<div class="footer__column">
+					<h4 class="footer__title">О КОМПАНИИ</h4>
+					<ul class="footer__list">
+						<li class="footer__list-item footer__number"><a href="tel:+996999378888">+996 (999) 378888</a></li>
+						<li class="footer__list-item footer__number"><a href="tel:+996557080060">+996 (557) 080060</a></li>
+						<li class="footer__list-item footer__location"><a target="_blank"
+								href="https://goo.gl/maps/voZ9kgwNQPmJ7BoP6">г.Бишкек
+								Восток 5 проход 100/23</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4 class="footer__title">ИНФОРМАЦИЯ</h4>
+					<ul class="footer__list">
+						<li tabindex="0" class="footer__list-item footer__triangle">Доставка и оплата</li>
+						<li tabindex="0" class="footer__list-item footer__triangle">О нас</li>
+						<li tabindex="0" class="footer__list-item footer__triangle">Политика Безопасности</li>
+						<li tabindex="0" class="footer__list-item footer__triangle">Пользовательское соглашение</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js?_v=20220205124645"></script>
+<script src="JS/app.min.js"></script>
+
+</html>
